@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Connect4.MainPage">
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="40">
+            <Button BackgroundColor="blue" Text="Save" CornerRadius="10" WidthRequest="70" Margin="0" Padding="10" Clicked="Save_Clicked" TextColor="White" />
+            <Button BackgroundColor="Blue" Text="Load" CornerRadius="10" WidthRequest="70" Margin="0" Padding="10" Clicked="Load_Clicked" TextColor="White" />
+            <Label Text="Connect4" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" FontSize="Large"/>
+            <Button BackgroundColor="Blue" Text="Restart" CornerRadius="10" WidthRequest="70" Margin="0" Padding="0" Clicked="Restart_Clicked" TextColor="White" />
+        </StackLayout>
+
+
+        <Grid x:Name="GrdGameSetup" BackgroundColor="blue" Margin="25" HeightRequest="400" WidthRequest="400" HorizontalOptions="Center" VerticalOptions="Center" ColumnSpacing="2" RowSpacing="2">
+
+        </Grid>
+
+        <StackLayout BackgroundColor="Blue">
+            <Label x:Name="LblStatus" Text="Red Turn"  HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center"  TextColor="Red"  FontSize="Medium"/>
+        </StackLayout>
+
+
+    </StackLayout>
+
+</ContentPage>
